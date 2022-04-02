@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Cleanliness Project</title>
+        <link rel="stylesheet" href="final.css">
+
+        <!---This is fonts from Google Font Poppins.--->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <!---This is End of Google Font Link.--->
+
+        <!---This is Font Awesome URL(version-4.7.0)--->
+        <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!---This is end of Font Awesome URL--->
+
+    </head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="final.html"><img src="Images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+
+                <!---This is Font Awesome Icon URL & use for close bar--->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <!---This is end of Awesome Icon URL(version-4.7.0)--->
+
+                <ul>
+                    <li><a href="final.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+
+                <!---This is Font Awesome Icon URL & use for menu bar--->
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <!---This is end of Font Awesome Icon URL(version-4.7.0)---->
+
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!--about us content-->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We Are Volunteers Of Ahmedabad City</h1>
+                <p>We are here to make Ahmedabad City clean & clear for citizen of our city to live healthy wealthy lifestyle. We are volunteers of Ahmedabad City those wants to implement their desire in present life. We provides sufficient data of Ahmedabad Zone & ward sector and Ahmedabad Municiple Corporations sites to our users to easy accesss to all data. </p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+
+            <div class="about-col">
+                <img src="Images/Ahmedabad.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!---Footer--->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are here to make wonderful website for Ahmedabad City to clean & clear for us.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> by Pranav Malhotra</p>
+    </section>
+
+    <!-----Javascript Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+        <!---End of Toggle Menu--->
+
+</body>
+</html>
